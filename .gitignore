@@ -1,0 +1,8 @@
+# backups
+*.sch-bak
+*.bak
+
+# bom files
+*.csv
+*.tsv
+*.xml
