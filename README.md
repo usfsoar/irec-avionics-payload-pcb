@@ -19,7 +19,7 @@ The main components of the board are:
 
 ## How to contribute
 
-KiCad is a free and open source software that is available on most desktop OSs. To learn how to use KiCad
+KiCad is a free and open source software that is available on most desktop OSs. To learn how to use KiCad [here](https://github.com/MalphasWats/hawk) is a pretty great tutorial that goes through making a simple PCB. You can go at your own pace but it should take about an hour but after that you should have a pretty good understanding of KiCad.
 
 If you want to add-on to the board the best way would be to create a hierarchical sheet if you are adding on a new subsystem or if you are adjusting the main board try not to adjust (move, rename, etc) items that you do not plan to change.
 
