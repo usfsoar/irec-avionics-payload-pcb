@@ -9,6 +9,6 @@ This is the PCB for the payload of USF Society of Aeronautics and Rocketry's 201
 
 ## How to contribute
 
-KiCad is a free and opensource software that is avaiable on most desktop OSs. To learn how to use KiCad
+KiCad is a free and opensource software that is avaiable on most desktop OSs. To learn how to use KiCad [here](https://github.com/MalphasWats/hawk) is a good tutorial that takes you throught all the steps of making a full board.
 
 If you want to add-on to the board the best way would be to create a hierachical sheet if you are adding on a new subsystem or if you are adjusting the main board try not to adjust (move, rename, etc) items that you do not plan to change.
