@@ -163,12 +163,12 @@ Transmitter
 $Comp
 L power:GND #PWR07
 U 1 1 5D9EEBFB
-P 1400 4250
-F 0 "#PWR07" H 1400 4000 50  0001 C CNN
-F 1 "GND" H 1405 4077 50  0000 C CNN
-F 2 "" H 1400 4250 50  0001 C CNN
-F 3 "" H 1400 4250 50  0001 C CNN
-	1    1400 4250
+P 1400 4050
+F 0 "#PWR07" H 1400 3800 50  0001 C CNN
+F 1 "GND" H 1405 3877 50  0000 C CNN
+F 2 "" H 1400 4050 50  0001 C CNN
+F 3 "" H 1400 4050 50  0001 C CNN
+	1    1400 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -182,30 +182,8 @@ F 3 "" H 1100 5750 50  0001 C CNN
 	1    1100 5750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR012
-U 1 1 5D9EFA65
-P 4250 4750
-F 0 "#PWR012" H 4250 4600 50  0001 C CNN
-F 1 "+3.3V" H 4265 4923 50  0000 C CNN
-F 2 "" H 4250 4750 50  0001 C CNN
-F 3 "" H 4250 4750 50  0001 C CNN
-	1    4250 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5D9F01FF
-P 4250 4950
-F 0 "#PWR013" H 4250 4700 50  0001 C CNN
-F 1 "GND" H 4255 4777 50  0000 C CNN
-F 2 "" H 4250 4950 50  0001 C CNN
-F 3 "" H 4250 4950 50  0001 C CNN
-	1    4250 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1400 4250 1600 4250
+	1400 4050 1600 4050
 Text GLabel 1550 5350 0    50   Input ~ 0
 CS1:1
 Text GLabel 1550 5450 0    50   Input ~ 0
@@ -220,13 +198,13 @@ Wire Wire Line
 	1550 5550 1600 5550
 Wire Wire Line
 	1550 6150 1600 6150
-Text GLabel 3850 5050 2    50   Input ~ 0
+Text GLabel 3850 5950 2    50   Input ~ 0
 MOSI2
-Text GLabel 3850 5150 2    50   Input ~ 0
+Text GLabel 1550 4350 0    50   Input ~ 0
 MISO2
-Text GLabel 3850 4850 2    50   Input ~ 0
+Text GLabel 1550 4450 0    50   Input ~ 0
 CS2
-Text GLabel 3850 4650 2    50   Input ~ 0
+Text GLabel 3850 5850 2    50   Input ~ 0
 SCK2
 Text GLabel 9450 1650 0    50   Input ~ 0
 MISO1
@@ -536,12 +514,6 @@ Wire Wire Line
 	1850 2050 1400 2050
 Connection ~ 1400 2050
 NoConn ~ 3800 4350
-NoConn ~ 3800 4450
-NoConn ~ 3800 4550
-NoConn ~ 3800 5450
-NoConn ~ 3800 5550
-NoConn ~ 3800 5650
-NoConn ~ 3800 5750
 NoConn ~ 3800 6450
 NoConn ~ 1600 6750
 NoConn ~ 1600 6650
@@ -553,12 +525,6 @@ NoConn ~ 1600 6050
 NoConn ~ 1600 5950
 NoConn ~ 1600 5650
 NoConn ~ 1600 4950
-NoConn ~ 1600 4850
-NoConn ~ 1600 4750
-NoConn ~ 1600 4650
-NoConn ~ 1600 4550
-NoConn ~ 1600 4450
-NoConn ~ 1600 4350
 Connection ~ 850  3150
 NoConn ~ 3800 4250
 Wire Wire Line
@@ -644,11 +610,7 @@ $EndComp
 Wire Wire Line
 	3800 4650 3850 4650
 Wire Wire Line
-	3800 4750 4250 4750
-Wire Wire Line
 	3800 4850 3850 4850
-Wire Wire Line
-	3800 4950 4250 4950
 Wire Wire Line
 	3800 5050 3850 5050
 Wire Wire Line
@@ -700,8 +662,6 @@ F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcc0ac60235.pdf" H 360
 	1    6900 1800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3800 5350
-NoConn ~ 3800 5250
 $Bitmap
 Pos 8700 6850
 Scale 0.650000
@@ -2320,17 +2280,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 5700 6600 5750
 $Comp
-L teensy:Teensy4.0 U2
-U 1 1 5D9ED16F
-P 2700 5600
-F 0 "U2" H 2700 7215 50  0000 C CNN
-F 1 "Teensy4.0" H 2700 7124 50  0000 C CNN
-F 2 "footprints:Teensy40" H 2300 5800 50  0001 C CNN
-F 3 "" H 2300 5800 50  0001 C CNN
-	1    2700 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 5DA64607
 P 3950 6950
@@ -2393,22 +2342,18 @@ Wire Wire Line
 	5900 5200 5950 5200
 Wire Wire Line
 	5900 5700 5950 5700
-Text GLabel 3850 5850 2    51   Input ~ 0
+Text GLabel 1550 4850 0    51   Input ~ 0
 SystemStatus
-Text GLabel 3850 6050 2    51   Input ~ 0
+Text GLabel 1550 4650 0    51   Input ~ 0
 SensorStatus
-Text GLabel 3850 5950 2    51   Input ~ 0
+Text GLabel 1550 4750 0    51   Input ~ 0
 TransmitterStatus
-Text GLabel 3850 6150 2    51   Input ~ 0
+Text GLabel 1550 4550 0    51   Input ~ 0
 GPSStatus
 Wire Wire Line
 	3850 5850 3800 5850
 Wire Wire Line
 	3800 5950 3850 5950
-Wire Wire Line
-	3850 6050 3800 6050
-Wire Wire Line
-	3800 6150 3850 6150
 $Comp
 L power:+BATT #PWR?
 U 1 1 5DAF547B
@@ -2507,4 +2452,111 @@ Wire Wire Line
 	8650 5350 8400 5350
 Text GLabel 5950 5700 2    51   Input ~ 0
 SensorStatus
+$Comp
+L power:GND #PWR?
+U 1 1 5DA52FDF
+P 7900 4450
+F 0 "#PWR?" H 7900 4200 50  0001 C CNN
+F 1 "GND" H 7905 4277 50  0000 C CNN
+F 2 "" H 7900 4450 50  0001 C CNN
+F 3 "" H 7900 4450 50  0001 C CNN
+	1    7900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4400 7900 4400
+Wire Wire Line
+	7900 4400 7900 4450
+Text GLabel 3850 5050 2    51   Input ~ 0
+SD_DAT0
+Text GLabel 3850 5150 2    51   Input ~ 0
+SD_DAT1
+Text GLabel 3850 4950 2    51   Input ~ 0
+SD_GND
+Text GLabel 3850 4850 2    51   Input ~ 0
+SD_CLK
+Text GLabel 3850 4750 2    51   Input ~ 0
+SD_3.3
+Text GLabel 3850 4650 2    51   Input ~ 0
+SD_CMD
+Text GLabel 3850 4550 2    51   Input ~ 0
+SD_DAT3
+Text GLabel 3850 4450 2    51   Input ~ 0
+SD_DAT2
+Wire Wire Line
+	3800 4550 3850 4550
+Wire Wire Line
+	3850 4450 3800 4450
+Wire Wire Line
+	3800 4750 3850 4750
+Wire Wire Line
+	3850 4950 3800 4950
+Text GLabel 6100 4100 0    51   Input ~ 0
+SD_DAT0
+Text GLabel 6100 4200 0    51   Input ~ 0
+SD_DAT1
+Text GLabel 6100 4000 0    51   Input ~ 0
+SD_GND
+Text GLabel 6100 3900 0    51   Input ~ 0
+SD_CLK
+Text GLabel 6100 3800 0    51   Input ~ 0
+SD_3.3
+Text GLabel 6100 3700 0    51   Input ~ 0
+SD_CMD
+Text GLabel 6100 3600 0    51   Input ~ 0
+SD_DAT3
+Text GLabel 6100 3500 0    51   Input ~ 0
+SD_DAT2
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 5DAA164B
+P 7050 3800
+F 0 "J?" H 7000 4517 50  0000 C CNN
+F 1 "Micro_SD_Card" H 7000 4426 50  0000 C CNN
+F 2 "" H 8200 4100 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7050 3800 50  0001 C CNN
+	1    7050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3500 6150 3500
+Wire Wire Line
+	6100 3600 6150 3600
+Wire Wire Line
+	6150 3700 6100 3700
+Wire Wire Line
+	6100 3800 6150 3800
+Wire Wire Line
+	6150 3900 6100 3900
+Wire Wire Line
+	6100 4000 6150 4000
+Wire Wire Line
+	6150 4100 6100 4100
+Wire Wire Line
+	6100 4200 6150 4200
+Wire Wire Line
+	1600 4250 1600 4050
+$Comp
+L teensy:Teensy4.0 U2
+U 1 1 5D9ED16F
+P 2700 5600
+F 0 "U2" H 2700 7215 50  0000 C CNN
+F 1 "Teensy4.0" H 2700 7124 50  0000 C CNN
+F 2 "footprints:Teensy40" H 2300 5800 50  0001 C CNN
+F 3 "" H 2300 5800 50  0001 C CNN
+	1    2700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4650 1550 4650
+Wire Wire Line
+	1550 4550 1600 4550
+Wire Wire Line
+	1600 4450 1550 4450
+Wire Wire Line
+	1550 4350 1600 4350
+Wire Wire Line
+	1600 4750 1550 4750
+Wire Wire Line
+	1550 4850 1600 4850
 $EndSCHEMATC
