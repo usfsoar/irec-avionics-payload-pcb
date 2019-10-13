@@ -1,0 +1,534 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L teensy:Teensy4.0 U?
+U 1 1 5DA28941
+P 2350 2550
+F 0 "U?" H 2350 4165 50  0000 C CNN
+F 1 "Teensy4.0" H 2350 4074 50  0000 C CNN
+F 2 "" H 1950 2750 50  0001 C CNN
+F 3 "" H 1950 2750 50  0001 C CNN
+	1    2350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:NHD-0420H1Z U?
+U 1 1 5DA358AF
+P 5700 5850
+F 0 "U?" H 5700 4961 50  0000 C CNN
+F 1 "NHD-0420H1Z" H 5700 4870 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 5700 4950 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 5800 5750 50  0001 C CNN
+	1    5700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LT1129-3.3_SOT223 U?
+U 1 1 5DA36B3C
+P 9400 5200
+F 0 "U?" H 9400 5442 50  0000 C CNN
+F 1 "LT1129-3.3_SOT223" H 9400 5351 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9400 5425 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/112935ff.pdf" H 9400 5150 50  0001 C CNN
+	1    9400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5DA37759
+P 9750 5400
+F 0 "C?" H 9865 5446 50  0000 L CNN
+F 1 "3.3uF" H 9865 5355 50  0000 L CNN
+F 2 "" H 9750 5400 50  0001 C CNN
+F 3 "~" H 9750 5400 50  0001 C CNN
+	1    9750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA38279
+P 9750 5600
+F 0 "#PWR?" H 9750 5350 50  0001 C CNN
+F 1 "GND" H 9755 5427 50  0000 C CNN
+F 2 "" H 9750 5600 50  0001 C CNN
+F 3 "" H 9750 5600 50  0001 C CNN
+	1    9750 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA38518
+P 9400 5550
+F 0 "#PWR?" H 9400 5300 50  0001 C CNN
+F 1 "GND" H 9405 5377 50  0000 C CNN
+F 2 "" H 9400 5550 50  0001 C CNN
+F 3 "" H 9400 5550 50  0001 C CNN
+	1    9400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DA389BA
+P 8850 5150
+F 0 "#PWR?" H 8850 5000 50  0001 C CNN
+F 1 "+BATT" H 8865 5323 50  0000 C CNN
+F 2 "" H 8850 5150 50  0001 C CNN
+F 3 "" H 8850 5150 50  0001 C CNN
+	1    8850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5250 9750 5200
+Wire Wire Line
+	9750 5200 9700 5200
+Wire Wire Line
+	9750 5600 9750 5550
+Wire Wire Line
+	9400 5550 9400 5500
+Wire Wire Line
+	8850 5150 8850 5200
+Wire Wire Line
+	8850 5200 9100 5200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA39F0C
+P 9950 5150
+F 0 "#PWR?" H 9950 5000 50  0001 C CNN
+F 1 "+3.3V" H 9965 5323 50  0000 C CNN
+F 2 "" H 9950 5150 50  0001 C CNN
+F 3 "" H 9950 5150 50  0001 C CNN
+	1    9950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5150 9950 5200
+Wire Wire Line
+	9950 5200 9750 5200
+Connection ~ 9750 5200
+Text Notes 9300 3900 0    50   ~ 0
+Power\n
+Text Notes 5650 4700 0    50   ~ 0
+Display\n
+$Comp
+L power:GND #PWR?
+U 1 1 5DA3EA10
+P 6100 6650
+F 0 "#PWR?" H 6100 6400 50  0001 C CNN
+F 1 "GND" H 6105 6477 50  0000 C CNN
+F 2 "" H 6100 6650 50  0001 C CNN
+F 3 "" H 6100 6650 50  0001 C CNN
+	1    6100 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA3F372
+P 5600 5000
+F 0 "#PWR?" H 5600 4850 50  0001 C CNN
+F 1 "+3.3V" H 5615 5173 50  0000 C CNN
+F 2 "" H 5600 5000 50  0001 C CNN
+F 3 "" H 5600 5000 50  0001 C CNN
+	1    5600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA3F7E4
+P 6150 4650
+F 0 "#PWR?" H 6150 4500 50  0001 C CNN
+F 1 "+3.3V" H 6165 4823 50  0000 C CNN
+F 2 "" H 6150 4650 50  0001 C CNN
+F 3 "" H 6150 4650 50  0001 C CNN
+	1    6150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5050 5600 5050
+Wire Wire Line
+	5600 5050 5600 5000
+Wire Wire Line
+	5700 6650 6100 6650
+$Comp
+L Device:R_POT RV?
+U 1 1 5DA418AE
+P 6100 4850
+F 0 "RV?" H 6031 4896 50  0000 R CNN
+F 1 "R_POT" H 6031 4805 50  0000 R CNN
+F 2 "" H 6100 4850 50  0001 C CNN
+F 3 "~" H 6100 4850 50  0001 C CNN
+	1    6100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4700 6100 4650
+Wire Wire Line
+	6100 4650 6150 4650
+Wire Wire Line
+	6100 5050 6100 5000
+Wire Wire Line
+	5800 5050 6100 5050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA499DB
+P 6250 6350
+F 0 "#PWR?" H 6250 6200 50  0001 C CNN
+F 1 "+3.3V" H 6265 6523 50  0000 C CNN
+F 2 "" H 6250 6350 50  0001 C CNN
+F 3 "" H 6250 6350 50  0001 C CNN
+	1    6250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA4B3A9
+P 6250 5850
+F 0 "#PWR?" H 6250 5600 50  0001 C CNN
+F 1 "GND" H 6255 5677 50  0000 C CNN
+F 2 "" H 6250 5850 50  0001 C CNN
+F 3 "" H 6250 5850 50  0001 C CNN
+	1    6250 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6350 6100 6350
+Wire Wire Line
+	6100 6350 6100 6150
+Wire Wire Line
+	6250 5850 6100 5850
+Wire Wire Line
+	6100 5850 6100 6050
+Text GLabel 5250 5250 0    50   Input ~ 0
+RS
+Text GLabel 5250 5350 0    50   Input ~ 0
+RW
+Text GLabel 5250 5450 0    50   Input ~ 0
+E
+Text GLabel 5250 5750 0    50   Input ~ 0
+DB0
+Text GLabel 5250 5850 0    50   Input ~ 0
+DB1
+Text GLabel 5250 5950 0    50   Input ~ 0
+DB2
+Text GLabel 5250 6050 0    50   Input ~ 0
+DB3
+Text GLabel 5250 6150 0    50   Input ~ 0
+DB4
+Text GLabel 5250 6250 0    50   Input ~ 0
+DB5
+Text GLabel 5250 6350 0    50   Input ~ 0
+DB6
+Text GLabel 5250 6450 0    50   Input ~ 0
+DB7
+Wire Wire Line
+	5250 5250 5300 5250
+Wire Wire Line
+	5300 5350 5250 5350
+Wire Wire Line
+	5250 5450 5300 5450
+Wire Wire Line
+	5300 5750 5250 5750
+Wire Wire Line
+	5250 5850 5300 5850
+Wire Wire Line
+	5300 5950 5250 5950
+Wire Wire Line
+	5250 6050 5300 6050
+Wire Wire Line
+	5300 6150 5250 6150
+Wire Wire Line
+	5250 6250 5300 6250
+Wire Wire Line
+	5300 6350 5250 6350
+Wire Wire Line
+	5250 6450 5300 6450
+$Comp
+L Device:R_POT RV?
+U 1 1 5DA543B2
+P 8750 2050
+F 0 "RV?" H 8681 2096 50  0000 R CNN
+F 1 "R_POT" H 8681 2005 50  0000 R CNN
+F 2 "" H 8750 2050 50  0001 C CNN
+F 3 "~" H 8750 2050 50  0001 C CNN
+	1    8750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA55083
+P 8750 2250
+F 0 "#PWR?" H 8750 2000 50  0001 C CNN
+F 1 "GND" H 8755 2077 50  0000 C CNN
+F 2 "" H 8750 2250 50  0001 C CNN
+F 3 "" H 8750 2250 50  0001 C CNN
+	1    8750 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 1850 0    50   Input ~ 0
+Audio
+$Comp
+L power:GND #PWR?
+U 1 1 5DA55E79
+P 8950 2300
+F 0 "#PWR?" H 8950 2050 50  0001 C CNN
+F 1 "GND" H 8955 2127 50  0000 C CNN
+F 2 "" H 8950 2300 50  0001 C CNN
+F 3 "" H 8950 2300 50  0001 C CNN
+	1    8950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1850 8750 1850
+Wire Wire Line
+	8750 1850 8750 1900
+Wire Wire Line
+	8750 2250 8750 2200
+Wire Wire Line
+	8950 2300 8950 2250
+Wire Wire Line
+	8950 2250 9000 2250
+Wire Wire Line
+	9300 3050 9400 3050
+$Comp
+L Regulator_Linear:LT1129-5.0_SOT223 U?
+U 1 1 5DA60F68
+P 9400 4250
+F 0 "U?" H 9400 4492 50  0000 C CNN
+F 1 "LT1129-5.0_SOT223" H 9400 4401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9400 4475 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/112935ff.pdf" H 9400 4200 50  0001 C CNN
+	1    9400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5DA63242
+P 9750 4450
+F 0 "C?" H 9865 4496 50  0000 L CNN
+F 1 "3.3uF" H 9865 4405 50  0000 L CNN
+F 2 "" H 9750 4450 50  0001 C CNN
+F 3 "~" H 9750 4450 50  0001 C CNN
+	1    9750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA63248
+P 9750 4650
+F 0 "#PWR?" H 9750 4400 50  0001 C CNN
+F 1 "GND" H 9755 4477 50  0000 C CNN
+F 2 "" H 9750 4650 50  0001 C CNN
+F 3 "" H 9750 4650 50  0001 C CNN
+	1    9750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA6324E
+P 9400 4600
+F 0 "#PWR?" H 9400 4350 50  0001 C CNN
+F 1 "GND" H 9405 4427 50  0000 C CNN
+F 2 "" H 9400 4600 50  0001 C CNN
+F 3 "" H 9400 4600 50  0001 C CNN
+	1    9400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DA63254
+P 8850 4200
+F 0 "#PWR?" H 8850 4050 50  0001 C CNN
+F 1 "+BATT" H 8865 4373 50  0000 C CNN
+F 2 "" H 8850 4200 50  0001 C CNN
+F 3 "" H 8850 4200 50  0001 C CNN
+	1    8850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4300 9750 4250
+Wire Wire Line
+	9750 4250 9700 4250
+Wire Wire Line
+	9750 4650 9750 4600
+Wire Wire Line
+	9400 4600 9400 4550
+Wire Wire Line
+	8850 4200 8850 4250
+Wire Wire Line
+	8850 4250 9100 4250
+Wire Wire Line
+	9950 4250 9750 4250
+Connection ~ 9750 4250
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA6D81D
+P 9950 4200
+F 0 "#PWR?" H 9950 4050 50  0001 C CNN
+F 1 "+5V" H 9965 4373 50  0000 C CNN
+F 2 "" H 9950 4200 50  0001 C CNN
+F 3 "" H 9950 4200 50  0001 C CNN
+	1    9950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 4250 9950 4200
+$Comp
+L Device:R R?
+U 1 1 5DA75AFF
+P 8900 1350
+F 0 "R?" V 8693 1350 50  0000 C CNN
+F 1 "R" V 8784 1350 50  0000 C CNN
+F 2 "" V 8830 1350 50  0001 C CNN
+F 3 "~" H 8900 1350 50  0001 C CNN
+	1    8900 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5DA77B73
+P 9100 1500
+F 0 "C?" H 9009 1454 50  0000 R CNN
+F 1 "CP1_Small" H 9009 1545 50  0000 R CNN
+F 2 "" H 9100 1500 50  0001 C CNN
+F 3 "~" H 9100 1500 50  0001 C CNN
+	1    9100 1500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9050 1350 9100 1350
+Wire Wire Line
+	9100 1350 9100 1400
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA82161
+P 8700 1300
+F 0 "#PWR?" H 8700 1150 50  0001 C CNN
+F 1 "+5V" H 8715 1473 50  0000 C CNN
+F 2 "" H 8700 1300 50  0001 C CNN
+F 3 "" H 8700 1300 50  0001 C CNN
+	1    8700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA84791
+P 9100 1650
+F 0 "#PWR?" H 9100 1400 50  0001 C CNN
+F 1 "GND" H 9105 1477 50  0000 C CNN
+F 2 "" H 9100 1650 50  0001 C CNN
+F 3 "" H 9100 1650 50  0001 C CNN
+	1    9100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1350 8700 1350
+Wire Wire Line
+	8700 1350 8700 1300
+Wire Wire Line
+	9100 1600 9100 1650
+Wire Wire Line
+	9850 1850 9900 1850
+Wire Wire Line
+	9850 1900 9850 1850
+Wire Wire Line
+	9600 1750 9600 2150
+Wire Wire Line
+	9900 1750 9600 1750
+Wire Wire Line
+	9300 3000 9300 3050
+Wire Wire Line
+	9400 2450 9400 2500
+Wire Wire Line
+	9400 3050 9400 2700
+Wire Wire Line
+	9300 2450 9300 2700
+$Comp
+L Device:R R?
+U 1 1 5DA5B3A1
+P 9300 2850
+F 0 "R?" H 9231 2804 50  0000 R CNN
+F 1 "R" H 9231 2895 50  0000 R CNN
+F 2 "" V 9230 2850 50  0001 C CNN
+F 3 "~" H 9300 2850 50  0001 C CNN
+	1    9300 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5DA5AD0F
+P 9400 2600
+F 0 "C?" H 9491 2646 50  0000 L CNN
+F 1 "CP1_Small" H 9491 2555 50  0000 L CNN
+F 2 "" H 9400 2600 50  0001 C CNN
+F 3 "~" H 9400 2600 50  0001 C CNN
+	1    9400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2450 9200 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5DA591F1
+P 9200 2500
+F 0 "#PWR?" H 9200 2250 50  0001 C CNN
+F 1 "GND" H 9205 2327 50  0000 C CNN
+F 2 "" H 9200 2500 50  0001 C CNN
+F 3 "" H 9200 2500 50  0001 C CNN
+	1    9200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA58EFC
+P 9850 1900
+F 0 "#PWR?" H 9850 1650 50  0001 C CNN
+F 1 "GND" H 9855 1727 50  0000 C CNN
+F 2 "" H 9850 1900 50  0001 C CNN
+F 3 "" H 9850 1900 50  0001 C CNN
+	1    9850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 5DA512F4
+P 9300 2150
+F 0 "U?" H 9644 2196 50  0000 L CNN
+F 1 "LM386" H 9644 2105 50  0000 L CNN
+F 2 "" H 9400 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9500 2350 50  0001 C CNN
+	1    9300 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 10000 1550 0    50   ~ 0
+Audio\n
+$Comp
+L Device:Speaker LS?
+U 1 1 5DA2A5F5
+P 10100 1750
+F 0 "LS?" H 10270 1746 50  0000 L CNN
+F 1 "Speaker" H 10270 1655 50  0000 L CNN
+F 2 "" H 10100 1550 50  0001 C CNN
+F 3 "~" H 10090 1700 50  0001 C CNN
+	1    10100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2050 9000 2050
+Wire Wire Line
+	9200 1350 9100 1350
+Connection ~ 9100 1350
+Wire Wire Line
+	9200 1350 9200 1850
+$EndSCHEMATC

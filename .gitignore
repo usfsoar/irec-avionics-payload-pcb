@@ -2,8 +2,11 @@
 *.kicad_pcb-bak
 *.sch-bak
 *.bak
+_autosave*
 
 # bom files
 *.csv
 *.tsv
 *.xml
+
+fp-info-cache
