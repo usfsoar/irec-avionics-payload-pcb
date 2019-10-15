@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name _ADXL357BEZ)(type Legacy)(uri "${KIPRJMOD}/components/ ADXL357BEZ.lib")(options "")(descr ""))
   (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/components/teensy.lib)(options "")(descr ""))
+  (lib (name ADIS16470AMLZ)(type Legacy)(uri ${KIPRJMOD}/components/ADIS16470AMLZ.lib)(options "")(descr ""))
 )

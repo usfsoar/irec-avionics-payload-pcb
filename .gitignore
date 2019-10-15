@@ -9,4 +9,7 @@ _autosave*
 *.tsv
 *.xml
 
+# export files
+*.step
+
 fp-info-cache
