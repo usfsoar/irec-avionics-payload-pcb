@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor_Pressure:MS5607-02BA U6
-U 1 1 5D9D7B99
-P 9950 1500
-F 0 "U6" H 10280 1546 50  0000 L CNN
-F 1 "MS5607-02BA" H 10280 1455 50  0000 L CNN
-F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 9950 1500 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035" H 9950 1500 50  0001 C CNN
-	1    9950 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR027
 U 1 1 5D9D987B
 P 9950 1000
@@ -38,23 +27,6 @@ F 3 "" H 9950 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9550 1400 9500 1400
-Wire Wire Line
-	9500 1500 9550 1500
-Wire Wire Line
-	9550 1600 9500 1600
-Wire Wire Line
-	9500 1700 9550 1700
-$Comp
-L power:GND #PWR022
-U 1 1 5DA5EAB0
-P 9100 2000
-F 0 "#PWR022" H 9100 1750 50  0001 C CNN
-F 1 "GND" H 9105 1827 50  0000 C CNN
-F 2 "" H 9100 2000 50  0001 C CNN
-F 3 "" H 9100 2000 50  0001 C CNN
-	1    9100 2000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C9
 U 1 1 5DA5FC43
@@ -75,19 +47,6 @@ Text Notes 10650 7650 2    50   ~ 0
 A\n
 Text Notes 8650 7650 2    50   ~ 0
 October 2019
-Text Notes 11000 1650 2    50   Italic 0
-Barometric Sensor
-$Comp
-L power:GND #PWR016
-U 1 1 5D9EC233
-P 6900 2500
-F 0 "#PWR016" H 6900 2250 50  0001 C CNN
-F 1 "GND" H 6905 2327 50  0000 C CNN
-F 2 "" H 6900 2500 50  0001 C CNN
-F 3 "" H 6900 2500 50  0001 C CNN
-	1    6900 2500
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR013
 U 1 1 5D9EC728
@@ -99,17 +58,6 @@ F 3 "" H 6550 1250 50  0001 C CNN
 	1    6550 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 2400 6800 2500
-Wire Wire Line
-	6800 2500 6900 2500
-Wire Wire Line
-	6900 2500 6900 2400
-Connection ~ 6900 2500
-Wire Wire Line
-	6900 2500 7000 2500
-Wire Wire Line
-	7000 2500 7000 2400
 Wire Wire Line
 	6900 1300 6550 1300
 Wire Wire Line
@@ -194,12 +142,6 @@ Text GLabel 3850 5850 2    50   Input ~ 0
 SCK2
 Text GLabel 9500 1400 0    50   Input ~ 0
 MISO1
-Text GLabel 9500 1500 0    50   Input ~ 0
-MOSI1
-Text GLabel 9500 1600 0    50   Input ~ 0
-SCK1
-Text GLabel 9450 2050 0    50   Input ~ 0
-CS1:1
 Text GLabel 6350 1700 0    50   Input ~ 0
 MISO2
 Text GLabel 6350 1500 0    50   Input ~ 0
@@ -237,17 +179,6 @@ SCK1
 Text GLabel 1550 5250 0    50   Input ~ 0
 CS1:2
 $Comp
-L RF_GPS:ublox_SAM-M8Q U5
-U 1 1 5DA86C80
-P 9750 3450
-F 0 "U5" H 9750 2861 50  0000 C CNN
-F 1 "ublox_SAM-M8Q" H 9750 2770 50  0000 C CNN
-F 2 "RF_GPS:ublox_SAM-M8Q" H 10250 3000 50  0001 C CNN
-F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-16012619%29.pdf" H 9750 3450 50  0001 C CNN
-	1    9750 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR023
 U 1 1 5DA880DC
 P 9300 3950
@@ -258,17 +189,6 @@ F 3 "" H 9300 3950 50  0001 C CNN
 	1    9300 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR026
-U 1 1 5DA88772
-P 9650 2900
-F 0 "#PWR026" H 9650 2750 50  0001 C CNN
-F 1 "+3.3V" H 9665 3073 50  0000 C CNN
-F 2 "" H 9650 2900 50  0001 C CNN
-F 3 "" H 9650 2900 50  0001 C CNN
-	1    9650 2900
-	1    0    0    -1  
-$EndComp
 Text Notes 9500 4250 0    50   ~ 0
 GPS Module\n
 Wire Wire Line
@@ -277,39 +197,12 @@ Text GLabel 1550 5050 0    50   Input ~ 0
 RX1
 Text GLabel 1550 5150 0    50   Input ~ 0
 TX1
-Text GLabel 10300 3250 2    50   Input ~ 0
-RX1
-Text GLabel 10300 3350 2    50   Input ~ 0
-TX1
-Wire Wire Line
-	10300 3250 10250 3250
-Wire Wire Line
-	10250 3350 10300 3350
 Wire Wire Line
 	1550 5150 1600 5150
 Wire Wire Line
 	1550 5250 1600 5250
 Wire Wire Line
 	1550 5050 1600 5050
-Wire Wire Line
-	9650 2900 9650 2950
-Wire Wire Line
-	9150 3650 9250 3650
-Wire Wire Line
-	7450 1500 7400 1500
-$Comp
-L power:GND #PWR017
-U 1 1 5DAEC18C
-P 7650 1750
-F 0 "#PWR017" H 7650 1500 50  0001 C CNN
-F 1 "GND" H 7655 1577 50  0000 C CNN
-F 2 "" H 7650 1750 50  0001 C CNN
-F 3 "" H 7650 1750 50  0001 C CNN
-	1    7650 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 1700 7650 1750
 $Comp
 L power:GND #PWR01
 U 1 1 5DA4DFC2
@@ -481,19 +374,6 @@ Text Notes 7400 7250 2    31   ~ 0
 NoConn ~ 1850 2850
 NoConn ~ 1850 2650
 NoConn ~ 1850 2550
-NoConn ~ 7400 1700
-NoConn ~ 7400 1800
-NoConn ~ 7400 1900
-NoConn ~ 7400 2000
-NoConn ~ 7400 2100
-NoConn ~ 7400 2200
-NoConn ~ 9750 2950
-NoConn ~ 9850 2950
-NoConn ~ 10250 3550
-NoConn ~ 10250 3650
-NoConn ~ 9250 3350
-NoConn ~ 9250 3450
-NoConn ~ 9250 3550
 Wire Wire Line
 	1850 2050 1400 2050
 Connection ~ 1400 2050
@@ -559,30 +439,6 @@ Text GLabel 4350 3050 2    50   Input ~ 0
 CS1:2
 NoConn ~ 4250 2150
 Wire Wire Line
-	8700 3650 8750 3650
-$Comp
-L power:GND #PWR020
-U 1 1 5DAAF959
-P 8700 3650
-F 0 "#PWR020" H 8700 3400 50  0001 C CNN
-F 1 "GND" H 8705 3477 50  0000 C CNN
-F 2 "" H 8700 3650 50  0001 C CNN
-F 3 "" H 8700 3650 50  0001 C CNN
-	1    8700 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5DAAF953
-P 8950 3650
-F 0 "SW2" H 8950 3935 50  0000 C CNN
-F 1 "SW_Push" H 8950 3844 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 8950 3850 50  0001 C CNN
-F 3 "~" H 8950 3850 50  0001 C CNN
-	1    8950 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3800 4650 3850 4650
 Wire Wire Line
 	3800 4850 3850 4850
@@ -605,17 +461,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 1250 7400 1300
 $Comp
-L Connector:Conn_Coaxial_x2 J2
-U 1 1 5DAC4DE7
-P 7650 1400
-F 0 "J2" H 7750 1375 50  0000 L CNN
-F 1 "Conn_Coaxial_x2" H 7750 1284 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132134-14_Vertical" H 7650 1300 50  0001 C CNN
-F 3 " ~" H 7650 1300 50  0001 C CNN
-	1    7650 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Antenna AE1
 U 1 1 5D9F9972
 P 7400 1050
@@ -624,17 +469,6 @@ F 1 "Antenna" H 7480 948 50  0000 L CNN
 F 2 "" H 7400 1050 50  0001 C CNN
 F 3 "~" H 7400 1050 50  0001 C CNN
 	1    7400 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L RF_Module:RFM96W-433S2 U3
-U 1 1 5D9EAA79
-P 6900 1800
-F 0 "U3" H 6900 2481 50  0000 C CNN
-F 1 "RFM96W-433S2" H 6900 2390 50  0000 C CNN
-F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 3600 3450 50  0001 C CNN
-F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcc0ac60235.pdf" H 3600 3450 50  0001 C CNN
-	1    6900 1800
 	1    0    0    -1  
 $EndComp
 $Bitmap
@@ -2347,53 +2181,10 @@ Wire Wire Line
 	5750 1800 5700 1800
 Wire Wire Line
 	5700 1800 5700 1850
-$Comp
-L Device:R R7
-U 1 1 5DAA16B8
-P 9300 1950
-F 0 "R7" V 9507 1950 50  0000 C CNN
-F 1 "10k" V 9416 1950 50  0000 C CNN
-F 2 "" V 9230 1950 50  0001 C CNN
-F 3 "~" H 9300 1950 50  0001 C CNN
-	1    9300 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 1700 9500 1950
-Wire Wire Line
-	9450 1950 9500 1950
-Connection ~ 9500 1950
-Wire Wire Line
-	9500 1950 9500 2050
-Wire Wire Line
-	9450 2050 9500 2050
-Wire Wire Line
-	9100 2000 9100 1950
-Wire Wire Line
-	9100 1950 9150 1950
 Wire Wire Line
 	8900 1000 9950 1000
 Wire Wire Line
-	8900 1300 8900 2300
-Wire Wire Line
-	8900 2300 9950 2300
-Wire Wire Line
-	9950 2300 9950 1900
-Wire Wire Line
 	8900 1300 9550 1300
-Connection ~ 8900 1300
-$Comp
-L power:GND #PWR0102
-U 1 1 5DAFFF7B
-P 8900 2300
-F 0 "#PWR0102" H 8900 2050 50  0001 C CNN
-F 1 "GND" H 8905 2127 50  0000 C CNN
-F 2 "" H 8900 2300 50  0001 C CNN
-F 3 "" H 8900 2300 50  0001 C CNN
-	1    8900 2300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8900 2300
 $Comp
 L Device:R R5
 U 1 1 5DB08CA1
@@ -2620,17 +2411,6 @@ Wire Wire Line
 	6100 3600 6150 3600
 Wire Wire Line
 	6100 3500 6150 3500
-$Comp
-L Connector:Micro_SD_Card J1
-U 1 1 5DAA164B
-P 7050 3800
-F 0 "J1" H 7000 4517 50  0000 C CNN
-F 1 "Micro_SD_Card" H 7000 4426 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 8200 4100 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7050 3800 50  0001 C CNN
-	1    7050 3800
-	1    0    0    -1  
-$EndComp
 Text GLabel 6100 3500 0    51   Input ~ 0
 SD_DAT2
 Text GLabel 6100 3600 0    51   Input ~ 0
@@ -2801,4 +2581,226 @@ Wire Wire Line
 Connection ~ 700  9850
 Wire Wire Line
 	700  9850 700  9950
+Connection ~ 8900 1300
+$Comp
+L Connector:Micro_SD_Card J1
+U 1 1 5DAA164B
+P 7050 3800
+F 0 "J1" H 7000 4517 50  0000 C CNN
+F 1 "Micro_SD_Card" H 7000 4426 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 8200 4100 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7050 3800 50  0001 C CNN
+	1    7050 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8900 2300
+$Comp
+L power:GND #PWR0102
+U 1 1 5DAFFF7B
+P 8900 2300
+F 0 "#PWR0102" H 8900 2050 50  0001 C CNN
+F 1 "GND" H 8905 2127 50  0000 C CNN
+F 2 "" H 8900 2300 50  0001 C CNN
+F 3 "" H 8900 2300 50  0001 C CNN
+	1    8900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2300 9950 1900
+Wire Wire Line
+	8900 2300 9950 2300
+Wire Wire Line
+	8900 1300 8900 2300
+Wire Wire Line
+	9100 1950 9150 1950
+Wire Wire Line
+	9100 2000 9100 1950
+Wire Wire Line
+	9450 2050 9500 2050
+Wire Wire Line
+	9500 1950 9500 2050
+Connection ~ 9500 1950
+Wire Wire Line
+	9450 1950 9500 1950
+Wire Wire Line
+	9500 1700 9500 1950
+$Comp
+L Device:R R7
+U 1 1 5DAA16B8
+P 9300 1950
+F 0 "R7" V 9507 1950 50  0000 C CNN
+F 1 "10k" V 9416 1950 50  0000 C CNN
+F 2 "" V 9230 1950 50  0001 C CNN
+F 3 "~" H 9300 1950 50  0001 C CNN
+	1    9300 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RF_Module:RFM96W-433S2 U3
+U 1 1 5D9EAA79
+P 6900 1800
+F 0 "U3" H 6900 2481 50  0000 C CNN
+F 1 "RFM96W-433S2" H 6900 2390 50  0000 C CNN
+F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 3600 3450 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcc0ac60235.pdf" H 3600 3450 50  0001 C CNN
+	1    6900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_x2 J2
+U 1 1 5DAC4DE7
+P 7650 1400
+F 0 "J2" H 7750 1375 50  0000 L CNN
+F 1 "Conn_Coaxial_x2" H 7750 1284 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-14_Vertical" H 7650 1300 50  0001 C CNN
+F 3 " ~" H 7650 1300 50  0001 C CNN
+	1    7650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DAAF953
+P 8950 3650
+F 0 "SW2" H 8950 3935 50  0000 C CNN
+F 1 "SW_Push" H 8950 3844 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 8950 3850 50  0001 C CNN
+F 3 "~" H 8950 3850 50  0001 C CNN
+	1    8950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5DAAF959
+P 8700 3650
+F 0 "#PWR020" H 8700 3400 50  0001 C CNN
+F 1 "GND" H 8705 3477 50  0000 C CNN
+F 2 "" H 8700 3650 50  0001 C CNN
+F 3 "" H 8700 3650 50  0001 C CNN
+	1    8700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3650 8750 3650
+NoConn ~ 9250 3550
+NoConn ~ 9250 3450
+NoConn ~ 9250 3350
+NoConn ~ 10250 3650
+NoConn ~ 10250 3550
+NoConn ~ 9850 2950
+NoConn ~ 9750 2950
+NoConn ~ 7400 2200
+NoConn ~ 7400 2100
+NoConn ~ 7400 2000
+NoConn ~ 7400 1900
+NoConn ~ 7400 1800
+NoConn ~ 7400 1700
+Wire Wire Line
+	7650 1700 7650 1750
+$Comp
+L power:GND #PWR017
+U 1 1 5DAEC18C
+P 7650 1750
+F 0 "#PWR017" H 7650 1500 50  0001 C CNN
+F 1 "GND" H 7655 1577 50  0000 C CNN
+F 2 "" H 7650 1750 50  0001 C CNN
+F 3 "" H 7650 1750 50  0001 C CNN
+	1    7650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1500 7400 1500
+Wire Wire Line
+	9150 3650 9250 3650
+Wire Wire Line
+	9650 2900 9650 2950
+Wire Wire Line
+	10250 3350 10300 3350
+Wire Wire Line
+	10300 3250 10250 3250
+Text GLabel 10300 3350 2    50   Input ~ 0
+TX1
+Text GLabel 10300 3250 2    50   Input ~ 0
+RX1
+$Comp
+L power:+3.3V #PWR026
+U 1 1 5DA88772
+P 9650 2900
+F 0 "#PWR026" H 9650 2750 50  0001 C CNN
+F 1 "+3.3V" H 9665 3073 50  0000 C CNN
+F 2 "" H 9650 2900 50  0001 C CNN
+F 3 "" H 9650 2900 50  0001 C CNN
+	1    9650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_GPS:ublox_SAM-M8Q U5
+U 1 1 5DA86C80
+P 9750 3450
+F 0 "U5" H 9750 2861 50  0000 C CNN
+F 1 "ublox_SAM-M8Q" H 9750 2770 50  0000 C CNN
+F 2 "RF_GPS:ublox_SAM-M8Q" H 10250 3000 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-16012619%29.pdf" H 9750 3450 50  0001 C CNN
+	1    9750 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 9450 2050 0    50   Input ~ 0
+CS1:1
+Text GLabel 9500 1600 0    50   Input ~ 0
+SCK1
+Text GLabel 9500 1500 0    50   Input ~ 0
+MOSI1
+Wire Wire Line
+	7000 2500 7000 2400
+Wire Wire Line
+	6900 2500 7000 2500
+Connection ~ 6900 2500
+Wire Wire Line
+	6900 2500 6900 2400
+Wire Wire Line
+	6800 2500 6900 2500
+Wire Wire Line
+	6800 2400 6800 2500
+$Comp
+L power:GND #PWR016
+U 1 1 5D9EC233
+P 6900 2500
+F 0 "#PWR016" H 6900 2250 50  0001 C CNN
+F 1 "GND" H 6905 2327 50  0000 C CNN
+F 2 "" H 6900 2500 50  0001 C CNN
+F 3 "" H 6900 2500 50  0001 C CNN
+	1    6900 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 11000 1650 2    50   Italic 0
+Barometric Sensor
+$Comp
+L power:GND #PWR022
+U 1 1 5DA5EAB0
+P 9100 2000
+F 0 "#PWR022" H 9100 1750 50  0001 C CNN
+F 1 "GND" H 9105 1827 50  0000 C CNN
+F 2 "" H 9100 2000 50  0001 C CNN
+F 3 "" H 9100 2000 50  0001 C CNN
+	1    9100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1700 9550 1700
+Wire Wire Line
+	9550 1600 9500 1600
+Wire Wire Line
+	9500 1500 9550 1500
+$Comp
+L Sensor_Pressure:MS5607-02BA U6
+U 1 1 5D9D7B99
+P 9950 1500
+F 0 "U6" H 10280 1546 50  0000 L CNN
+F 1 "MS5607-02BA" H 10280 1455 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 9950 1500 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035" H 9950 1500 50  0001 C CNN
+	1    9950 1500
+	1    0    0    -1  
+$EndComp
+Text Notes 6950 3050 0    31   ~ 0
+Data\n
 $EndSCHEMATC
