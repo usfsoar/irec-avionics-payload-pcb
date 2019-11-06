@@ -13,8 +13,8 @@ _autosave*
 *.step
 
 # auto router files
-.ses
-.dsn
-.rules
+*.ses
+*.dsn
+*.rules
 
 fp-info-cache
