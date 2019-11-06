@@ -12,4 +12,9 @@ _autosave*
 # export files
 *.step
 
+# auto router files
+.ses
+.dsn
+.rules
+
 fp-info-cache
