@@ -30,11 +30,13 @@ If you want the main directory **irec-avionics-payload-pcb** to be in **Document
 git clone https://github.com/usfsoar/irec-avionics-payload-pcb.git
 ```
 
-## Step 6: Navigate into the cloned directory
+## Step 6: Navigate into the cloned directory and make sure you have no uncommited changes
 
 ```
 cd irec-avionics-payload-pcb
 ```
+
+Then run `git status`, if there are any changes untracked files, changes not staged for commit, or stanged items run `git stash`.
 
 ## Step 7: Create a new branch for your feature
 
