@@ -1,5 +1,8 @@
 # How to contribute using Git and GitHub
 
+## Step 0: Be a member of the SOAR GitHub Team
+If you are not a member already message Madison Kozee or Ian Sanders on Slack.
+
 ## Step 1: Download Git
 Go [here](https://www.git-scm.com/downloads) and download the version for your OS. If on Linux use your distros package manager.
 
@@ -10,7 +13,7 @@ Go [here](https://www.git-scm.com/downloads) and download the version for your O
 
 ## Step 3: Configure Git
 
-Run both of these commands and substitute `<username>` and `<email>` with your GitHub username and email
+Run both of these commands and substitute `<username>` and `<email>` with your GitHub username and email. The brackets are replaced as well so it will just be your username in parentheses.
 ``` 
 git config --global user.name "<username>"
 git config --global user.email "<email>"
@@ -66,4 +69,4 @@ git push -u origin <name_of_branch>
 
 ## Step 11: Pull Request
 
-Now go to the GitHub project pull request page (here)[https://github.com/usfsoar/irec-avionics-payload-pcb/pulls] and make a pull request saying what you changed and why it should be part of the project.
+Now go to the GitHub project pull request page [here](https://github.com/usfsoar/irec-avionics-payload-pcb/pulls) and make a pull request saying what you changed and why it should be part of the project.
