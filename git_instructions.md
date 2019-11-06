@@ -1,7 +1,7 @@
 # How to contribute using Git and GitHub
 
 ## Step 0: Be a member of the SOAR GitHub Team
-If you are not a member already message Madison Kozee or Ian Sanders on Slack.
+If you are not a member already message Ian Sanders or Madison Kozee on Slack with your GitHub username and say you want to be on the IREC team. 
 
 ## Step 1: Download Git
 Go [here](https://www.git-scm.com/downloads) and download the version for your OS. If on Linux use your distros package manager.
