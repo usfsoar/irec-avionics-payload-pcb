@@ -1,10 +1,10 @@
 # IREC Avionics Payload PCB
 
-This is the PCB for the payload of USF Society of Aeronautics and Rocketry's 2019 IREC rocket. The PCB is made in KiCad (pronounced key-cad). The different files are:
+This is the PCB for the payload of USF Society of Aeronautics and Rocketry's 2019 IREC rocket. The PCB is made in KiCad (pronounced key-cad). The different files are split into the folders ***payload_ground_pcb*** and ***payload_main_pcb*** under those there are the files:
 
-* ***avionics-payload.pro*** - This is the base project which you should open in KiCad.
-* ***avionics-payload.sch*** - This is the sketch of the PCB and shows which components should be connected where.
-* ***avionics-payload.kicad_pcb*** - This is the actual PCB that has the components laid out and connected with physical dimensions.
+* ***avionics-*.pro*** - This is the base project which you should open in KiCad.
+* ***avionics-*.sch*** - This is the sketch of the PCB and shows which components should be connected where.
+* ***avionics-*.kicad_pcb*** - This is the actual PCB that has the components laid out and connected with physical dimensions.
 * ***components*** - This folder contains components that are not by default included with KiCad
 
 ## About the board
