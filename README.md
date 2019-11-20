@@ -29,6 +29,8 @@ KiCad is a free and open source software that is available on most desktop OSs. 
 
 If you want to add-on to the board the best way would be to create a hierarchical sheet if you are adding on a new subsystem or if you are adjusting the main board try not to adjust (move, rename, etc) items that you do not plan to change.
 
+If you haven't used Git or GitHub before (or you have and just want the commands to make a pull request for this repository) go [here](https://github.com/usfsoar/irec-avionics-payload-pcb/blob/master/git_instructions.md).
+
 ## Pictures
 
 ![Schematic](https://raw.githubusercontent.com/usfsoar/irec-avionics-payload-pcb/master/avionics-payload-schematic.jpg)
