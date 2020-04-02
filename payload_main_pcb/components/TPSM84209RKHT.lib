@@ -1,0 +1,44 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TPSM84209RKHT
+#
+DEF TPSM84209RKHT U 0 40 Y Y 1 L N
+F0 "U" -500 300 50 H V L BNN
+F1 "TPSM84209RKHT" -500 -400 50 H V L BNN
+F2 "VREG_TPSM84209RKHT" 0 0 50 H I L BNN
+F3 "https://www.digikey.com/product-detail/en/texas-instruments/TPSM84209RKHT/296-49513-1-ND/9383862?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F4 "296-49513-1-ND" 0 0 50 H I L BNN
+F5 "PowerQFN-9 Texas Instruments" 0 0 50 H I L BNN
+F6 "TPSM84209RKHT" 0 0 50 H I L BNN
+F7 "Non-Isolated PoL Module DC DC Converter 1 Output 1.2 ~ 6V 2.5A 4.5V - 28V Input" 0 0 50 H I L BNN
+F8 "Texas Instruments" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 8 -500 300 -500 -300 N
+P 2 0 0 8 -500 -300 500 -300 N
+P 2 0 0 8 500 -300 500 300 N
+P 2 0 0 8 500 300 -500 300 N
+X EN 9 -700 100 200 R 40 40 0 0 I 
+X FB 1 -700 0 200 R 40 40 0 0 I 
+X SW 4 700 100 200 L 40 40 0 0 O 
+X SW 5 700 100 200 L 40 40 0 0 O 
+X VOUT 3 700 200 200 L 40 40 0 0 O 
+X VOUT VOUT1 700 200 200 L 40 40 0 0 O 
+X VOUT VOUT2 700 200 200 L 40 40 0 0 O 
+X VOUT VOUT3 700 200 200 L 40 40 0 0 O 
+X VOUT VOUT4 700 200 200 L 40 40 0 0 O 
+X VOUT VOUT5 700 200 200 L 40 40 0 0 O 
+X VIN 2 -700 200 200 R 40 40 0 0 I 
+X VIN VIN -700 200 200 R 40 40 0 0 I 
+X GND 8 700 -200 200 L 40 40 0 0 W 
+X GND GND1 700 -200 200 L 40 40 0 0 W 
+X GND GND2 700 -200 200 L 40 40 0 0 W 
+X GND GND3 700 -200 200 L 40 40 0 0 W 
+X GND GND4 700 -200 200 L 40 40 0 0 W 
+X GND GND5 700 -200 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -3,6 +3,12 @@
 *.sch-bak
 *.bak
 _autosave*
+*.000
+*.bck
+*~
+*.tmp
+*-save.pro
+*-save.kicad_pcb
 
 # bom files
 *.csv
@@ -16,5 +22,8 @@ _autosave*
 *.ses
 *.dsn
 *.rules
+
+# Netlist files (exported from Eeschema)
+*.net
 
 fp-info-cache

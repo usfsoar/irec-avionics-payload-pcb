@@ -2,4 +2,6 @@
   (lib (name _ADXL357BEZ)(type Legacy)(uri "${KIPRJMOD}/components/ ADXL357BEZ.lib")(options "")(descr ""))
   (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/components/teensy.lib)(options "")(descr ""))
   (lib (name ADIS16470AMLZ)(type Legacy)(uri ${KIPRJMOD}/components/ADIS16470AMLZ.lib)(options "")(descr ""))
+  (lib (name TPSM84209RKHT)(type Legacy)(uri ${KIPRJMOD}/components/TPSM84209RKHT.lib)(options "")(descr ""))
+  (lib (name LMZ12002TZ)(type Legacy)(uri ${KIPRJMOD}/components/LMZ12002TZ.lib)(options "")(descr ""))
 )
